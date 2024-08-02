@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url(assets/fonts/static/Inter-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(assets/fonts/static/Inter-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url(assets/fonts/static/Inter-SemiBold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey_700: hsl(0, 0%, 20%);
+    --Grey_800: hsl(0, 0%, 12%);
+    --Grey_900: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+html {
+    background: var(--Grey_900);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 325px;
+    height: 577px;
+    background-color: var(--Grey_800);
+    border-radius: 2%;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 270px;
+    height: 220px;
+}
+
+header>img {
+    width: 88px;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    font-family: 'Inter-SemiBold';
+    font-size: 24px;
+    color: var(--White);
+}
+
+h2 {
+    font-family: 'Inter-Regular';
+    font-size: 14px;
+    color: var(--White);
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Inter-Bold';
+    font-size: 14px;
+    color: var(--Green);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    width: 100%;
+}
+
+.buttom {
+    background: var(--Grey_700);
+    font-family: 'Inter-SemiBold';
+    font-size: 14px;
+    text-align: center;
+    padding: 14px;
+    color: var(--White);
+    border-radius: 7px;
+    width: 100%;
+    height: 44px;
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        top: 26px;
+        left: 115px;
+        width: 383px;
+        height: 608px;
+        padding: 38px;
+    }
+    
+}
+  
